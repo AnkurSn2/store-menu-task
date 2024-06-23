@@ -1,0 +1,14 @@
+/* src/components/Favourites.css */
+.favourites {
+    text-align: center;
+  }
+  
+  .favourites ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .favourites li {
+    margin: 10px 0;
+  }
+  

@@ -1,0 +1,13 @@
+.meals {
+    text-align: center;
+  }
+  
+  .meals ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .meals li {
+    margin: 10px 0;
+  }
+  
