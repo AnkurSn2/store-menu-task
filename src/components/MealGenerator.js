@@ -1,4 +1,3 @@
-// src/components/MealGenerator.js
 import React, { useState } from 'react';
 import { fetchRandomMeal } from '../services/api';
 import './MealGenerator.css';

@@ -1,4 +1,3 @@
-// src/components/Favourites.js
 import React, { useState, useEffect } from 'react';
 import MealDetail from './MealDetail';
 import './Favourites.css';

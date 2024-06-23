@@ -1,4 +1,3 @@
-// src/components/Menu.js
 import React, { useState, useEffect } from 'react';
 import { fetchCategories } from '../services/api';
 import { Link } from 'react-router-dom';

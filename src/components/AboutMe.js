@@ -1,4 +1,3 @@
-// src/components/AboutMe.js
 import React from 'react';
 import './AboutMe.css';
 

@@ -1,4 +1,3 @@
-// src/components/MealDetail.js
 import React from 'react';
 import './MealDetail.css';
 

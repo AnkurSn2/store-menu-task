@@ -1,4 +1,3 @@
-// src/components/Meals.js
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { fetchMealsByCategory } from '../services/api';
@@ -11,9 +10,7 @@ const Meals = () => {
 
   useEffect(() => {
     const getMeals = async () => {
-      console.log(`Fetching meals for category: ${category}`);
       const mealsData = await fetchMealsByCategory(category);
-      console.log('Fetched meals data:', mealsData);
       setMeals(mealsData);
     };
     getMeals();
