@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { fetchRandomMeal } from '../services/api';
 import './MealGenerator.css';
+import Card from '@mui/material/Card';
 
 const MealGenerator = () => {
   const [randomMeal, setRandomMeal] = useState(null);
@@ -15,10 +16,10 @@ const MealGenerator = () => {
       <h1>Random Meal Generator</h1>
       <button onClick={generateRandomMeal}>Generate Meal</button>
       {randomMeal && (
-        <div className="random-meal">
+        <Card className="random-meal">
           <img src={randomMeal.strMealThumb} alt={randomMeal.strMeal} />
           <h2>{randomMeal.strMeal}</h2>
-        </div>
+        </Card>
       )}
     </div>
   );

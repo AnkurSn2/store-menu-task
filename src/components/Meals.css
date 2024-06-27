@@ -1,13 +1,40 @@
 .meals {
-    text-align: center;
-  }
-  
-  .meals ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .meals li {
-    margin: 10px 0;
-  }
-  
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Create four equal columns */
+  gap: 16px; /* Adjust the gap between cards as needed */
+  padding: 20px;
+  margin-left: 240px;
+}
+
+.meal-card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  max-width: 300px;
+}
+
+.meal-card img {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ddd;
+}
+
+.meal-card h3 {
+  font-size: 1.2em;
+  margin: 16px 0;
+}
+
+.heart-icon {
+  color: burlywood;
+  font-size: 1.5em;
+  margin: 16px;
+  cursor: pointer;
+}
+
+.meal-header h1 {
+  margin-left: 620px;
+  color: cadetblue;
+}
+

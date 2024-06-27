@@ -1,31 +1,46 @@
-.meal-detail {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: #f4f4f4;
-    padding: 10px;
-    border-radius: 5px;
-  }
-  
-  .meal-detail img {
-    max-width: 100px;
-    border-radius: 5px;
-  }
-  
-  .meal-detail .fav-button,
-  .meal-detail .remove-button {
-    background: none;
-    border: none;
-    cursor: pointer;
-    font-size: 20px;
-    margin-left: 10px;
-  }
-  
-  .meal-detail .fav-button {
-    color: red;
-  }
-  
-  .meal-detail .remove-button {
-    color: black;
-  }
-  
+.meal-card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  max-width: 330px;
+}
+
+.meal-card img {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ddd;
+}
+
+.meal-card .fav-button,
+.meal-card .remove-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  margin-left: 10px;
+  color: cadetblue;
+  font-size: 1.2em;
+  margin: 16px 0;
+}
+
+.meal-card .remove-button:hover {
+color: black;
+}
+
+.meal-card .fav-button {
+  color: burlywood;
+  font-size: 1.5em;
+  margin: 16px;
+  cursor: pointer;
+}
+
+.meal-card .fav-button:hover {
+  color: red;
+  transform: scale(1.05);
+} 
+
+.meal-detail .remove-button {
+  color: black;
+}

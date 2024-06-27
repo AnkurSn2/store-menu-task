@@ -13,11 +13,17 @@
   }
   
   .random-meal {
-    margin-top: 20px;
+    max-width: 200px;
+    max-height: 300px;
+    margin-left: 560px;
   }
   
   .random-meal img {
-    max-width: 100px;
+    max-width: 200px;
     border-radius: 5px;
+  }
+
+  .meal-generator h1 {
+    color: cadetblue;
   }
   

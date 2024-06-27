@@ -1,5 +1,6 @@
 import React from 'react';
 import './MealDetail.css';
+import { Card } from '@mui/material';
 
 const MealDetail = ({ meal, onRemoveFavourite }) => {
   const toggleFavourite = () => {
@@ -17,17 +18,17 @@ const MealDetail = ({ meal, onRemoveFavourite }) => {
   };
 
   return (
-    <div className="meal-detail">
+    <div>
+    <Card className="meal-card">
       <img src={meal.strMealThumb} alt={meal.strMeal} />
-      <h2>{meal.strMeal}</h2>
-      <button className="fav-button" onClick={toggleFavourite}>
-        ❤
-      </button>
+      <h4>{meal.strMeal}</h4>
+      <button className="fav-button" onClick={toggleFavourite}>❤</button>
       {onRemoveFavourite && (
         <button className="remove-button" onClick={onRemoveFavourite}>
           Remove
         </button>
       )}
+    </Card>
     </div>
   );
 };

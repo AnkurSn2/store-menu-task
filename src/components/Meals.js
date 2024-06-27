@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import { fetchMealsByCategory } from '../services/api';
 import MealDetail from './MealDetail';
 import './Meals.css';
+import Card from '@mui/material/Card';
 
 const Meals = () => {
   const { category } = useParams();
@@ -17,15 +18,15 @@ const Meals = () => {
   }, [category]);
 
   return (
+    <div className='meal-header'>
+    <h1>Meals in {category}</h1>
     <div className="meals">
-      <h1>Meals in {category}</h1>
-      <ul>
-        {meals.map(meal => (
-          <li key={meal.idMeal}>
-            <MealDetail meal={meal} />
-          </li>
-        ))}
-      </ul>
+      {meals.map(meal => (
+        <div key={meal.idMeal} >
+            <MealDetail meal={meal}/>
+          </div>
+      ))}
+    </div>
     </div>
   );
 };

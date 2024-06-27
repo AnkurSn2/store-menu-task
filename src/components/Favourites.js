@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import MealDetail from './MealDetail';
 import './Favourites.css';
+import Card from '@mui/material/Card';
 
 const Favourites = () => {
   const [favourites, setFavourites] = useState([]);
@@ -21,9 +22,9 @@ const Favourites = () => {
       <h1>My Favourite Meals</h1>
       <ul>
         {favourites.map(meal => (
-          <li key={meal.idMeal}>
+          <div key={meal.idMeal} className='fav-meals'>
             <MealDetail meal={meal} onRemoveFavourite={() => removeFavourite(meal.idMeal)} />
-          </li>
+          </div>
         ))}
       </ul>
     </div>

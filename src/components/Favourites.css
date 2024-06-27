@@ -6,8 +6,12 @@
     list-style: none;
     padding: 0;
   }
-  
-  .favourites li {
-    margin: 10px 0;
+
+  .fav-meals {
+    margin-left: 500px;
+  }
+
+  .favourites h1 {
+    color: cadetblue;
   }
   

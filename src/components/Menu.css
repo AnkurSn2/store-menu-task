@@ -6,6 +6,7 @@
 .menu h1 {
   font-size: 2rem;
   margin-bottom: 20px;
+  color: cadetblue;
 }
 
 .categories {
@@ -24,6 +25,7 @@
   text-decoration: none;
   color: #333;
   font-size: 1rem;
+  font-size: large;
 }
 
 .category-link:hover {
